@@ -1,0 +1,30 @@
+laboratorio1
+
+ejercicio3
+
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("ingrese el maximo de la secuencia");
+        int n = entrada.nextInt();
+
+        recursion(n, 1);
+
+    }
+
+    static void recursion(int n, int i){
+        if(i==n)
+            System.out.println(i + " ");
+        else{
+            System.out.println(i + " ");
+            recursion(n, ++i);
+            System.out.println(--i + " ");
+        }
+    }
+}
