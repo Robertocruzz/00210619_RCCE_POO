@@ -1,0 +1,34 @@
+package com.RCCE.x00210610;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void  main(String[] args){
+
+        class laptop {
+
+
+        String marca;
+        String generacion = "octava";
+        String usuario;
+
+            public void IniciarSecion() {
+                Scanner entrada = new Scanner(System.in);
+                System.out.println("nombre de usuario");
+                usuario = entrada.next();
+                System.out.println("inicio sesion con: " + usuario);
+
+            }
+            public void EsteEquipo () {
+                System.out.println("este equipo es de" + generacion + "generacion");
+
+
+            }
+
+
+        }
+
+
+    }
+}
